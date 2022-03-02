@@ -12,6 +12,7 @@
 </head>
 
 <body>
+ 
         
     <header>
         <nav class="negrita navbar navbar-expand-lg navbar-dark">
@@ -46,8 +47,29 @@
 
     </header>
 
+     
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          
+        </div>
+        <div class="col-12">
+          <h1 class="animate__animated animate__fadeInUp mb-5">Consultanos sin compromiso</h1>
+        </div>
+        <div class="col">
+         
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="t4 animate__animated animate__fadeIn">Te responderemos a la brevedad.</p>
+          </div>
+          </div>
+    </div>
+
+    
+
     <section class="contenido"> <br>
-        <img src="../assets/img/contacto.jpg" alt="Fotografía" class="tamañoimg">
+        <img src="../assets/img/contacto2.jpg" alt="Fotografía" class="tamañoimg container-sm">
     </section>
 
     <section>
@@ -65,27 +87,36 @@
 
 <form class="formulario">
 
-    <label for="name">Nombre</label>
-    <input type="name" id="name">
+  <div class="form-row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Nombre">
+    </div><br>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Apellido">
+    </div>
+  </div>
 
-    <br> <br>
+    
 
-    <label for="name">Apellido</label>
-    <input type="name" id="name">
+    <div class="form-group">
+      <label for="exampleInputEmail1"></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa tu email">
+      <small id="emailHelp" class="form-text text-muted">Tu dirección de correo nunca será revelada.</small>
+    </div>
 
+    
     <br><br>
 
-    <label for="email">email</label>
-    <input type="email" name="email" placeholder="nombre@ejemplo.com"/>
-
-    <br><br>
-
-    <p class="cursiva"> Desea recibir el Newsletter <input type="checkbox" name="acepta" value="1" /> </p>
+    <p> Desea recibir el Newsletter <input type="checkbox" name="acepta" value="1" /> </p>
 
     <br>
-    <textarea rows="4" cols="15" placeholder="Escribe aquí tu consulta..."></textarea><br>
-    <input type="reset" value="Limpiar formulario"/>
-    <input type="submit" value="Enviar formulario"/>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Deja tu comentario aquí.</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div><br>
+    
+    <button type="reset" class="btn btn-secondary">Borrar</button>
+    <button type="submit" class="btn btn-secondary">Enviar</button>
 
     
 

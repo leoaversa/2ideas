@@ -19,12 +19,30 @@
       animation-duration: 3s;
   }
 
+    .t4{
+      font-size: 24px;
+      letter-spacing: -1px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      color: rgb(141, 138, 138);
+      max-width: 1200px;
+      margin: auto;
+      margin-bottom: 30px;
+      animation-duration: 4s;
+    }
+
    .t3{ 
     font-size: 20px;
     color: rgb(0, 110, 255);
     text-decoration: none;   
   }
 
+   .t5{
+     color: white;
+   }
+  
   .t9{
     font-size: 30px;
     color: rgb(41, 40, 40);
@@ -113,9 +131,14 @@
       margin-top: 25px;
       width: 800px;
       display: block;
-      margin:auto;
+      margin: auto;
     }
 
+    .galeriaimgvideo{
+      width: 111%;
+      padding: 0px;
+      margin-left: -10px;
+    }
 
 
     /* ESTILOS DE ICONOS */
@@ -260,6 +283,15 @@
       
   }
 
+  .zoom {
+    transition: transform .3s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5);
+    
+}
+
   .flexitems{
   
     margin-top: 45px;
@@ -340,6 +372,15 @@ footer {
   text-align: center;
 }
 
+.imagenvideo {
+  background-image: url(/assets/img/lente.png);
+  
+
+
+}  
+
+
+
 .videodesarrolloweb{
 
   margin-top: 0px;
@@ -356,14 +397,27 @@ footer {
   font-size: 20px;
 }
 
+
+
 /* BACKGROUND */
 .background{
   background: #005AA7;
 background: -webkit-linear-gradient(to bottom, #005AA7, #FFFDE4);
 background: linear-gradient(to bottom,#005AA7, #FFFDE4);
 
+}
+
+.backcolor{
+  background: #005AA7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }
+
+
+
+
 /* MEDIA QUERYS */
 
 @media (max-width:640px){
@@ -395,9 +449,14 @@ grid-row: 1fr;
 
   h1{
     font-size: 50px;
+    
   }
 
   .t2 {
+    font-size: 18px;
+  }
+
+  .t4 {
     font-size: 18px;
   }
 
@@ -444,5 +503,5 @@ grid-row: 1fr;
 
   }
 
-  
+
 
