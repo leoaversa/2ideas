@@ -162,10 +162,7 @@
     opacity: 0.7;      
 }
 
-  .lupa{
-    width: 16px;
-    opacity: 0.7;
-  }
+  
 
   .mainfoto{
 
@@ -353,14 +350,20 @@
 
 
 footer {
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row: 1fr;
-  margin-left: 10px;
+  gap: 10px;
   color: gray;
   font-size: 13px;
   padding: 10px;
 }
+
+footer div {
+  margin-left: 5px;
+}
+
 
 
 
@@ -375,17 +378,12 @@ footer {
 .imagenvideo {
   background-image: url(/assets/img/lente.png);
   
-
-
 }  
-
-
 
 .videodesarrolloweb{
 
   margin-top: 0px;
   text-align: center;
-
 
 }
 
