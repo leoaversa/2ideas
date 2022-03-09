@@ -1,0 +1,19 @@
+{
+  "name": "clase-2-b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass style.scss style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leoaversa/repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leoaversa/repo/issues"
+  },
+  "homepage": "https://github.com/leoaversa/repo#readme"
+}
