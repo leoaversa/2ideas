@@ -224,6 +224,18 @@ nav ul a {
 }
 
 /* ESTILOS DE IMÁGENES */
+.hover01 {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.hover01 .figure {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
 .tamañoimg {
   margin-top: 25px;
   width: 800px;
@@ -482,6 +494,9 @@ footer div {
     font-size: 18px;
   }
   .t3 {
+    font-size: 18px;
+  }
+  .t4, .t4B {
     font-size: 18px;
   }
   .flexitems {
