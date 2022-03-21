@@ -229,6 +229,38 @@ nav ul a {
   font-weight: bold;
 }
 
+.t20 {
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  font-weight: bold;
+  color: #155c18;
+  margin-top: 50px;
+  font-family: 'Pacifico';
+  background: -webkit-linear-gradient(#f017b9, #181bda);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.t21 {
+  font-size: 50px;
+  text-align: left;
+  margin-top: 120px;
+  margin-left: 10px;
+  color: white;
+  font-weight: bolder;
+  line-height: 0.9;
+}
+
+.t22 {
+  font-size: 20px;
+  color: #006eff;
+  text-decoration: none;
+  text-align: start;
+  margin-left: -260px;
+  color: #ffddbe;
+}
+
 .small_txt {
   font-size: 12px;
   text-align: center;
@@ -395,15 +427,15 @@ table td {
 }
 
 .zoom {
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 .zoom:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .flexitems {
@@ -443,6 +475,16 @@ table td {
 .c8 {
   background-repeat: no-repeat;
   opacity: 0.6;
+}
+
+.c9 {
+  padding: 20px;
+  background-image: url(./assets/img/dis1.png);
+}
+
+.c10 {
+  padding: 20px;
+  background-image: url(./assets/img/estamos.jpg);
 }
 
 .contenedor {
@@ -663,6 +705,9 @@ footer div {
     margin-top: 80px;
     margin-left: 50px;
   }
+  .t22 {
+    margin-left: -150px;
+  }
 }
 
 @media (min-width: 750px) {
@@ -677,6 +722,9 @@ footer div {
   .t19 {
     font-size: 20px;
     margin-left: 30px;
+  }
+  .t22 {
+    margin-left: -170px;
   }
 }
 
@@ -694,6 +742,9 @@ footer div {
     font-size: 20px;
     margin-left: 100px;
     margin-top: 140px;
+  }
+  .t22 {
+    margin-left: -200px;
   }
 }
 
@@ -714,6 +765,9 @@ footer div {
     font-size: 30px;
     margin-left: 150px;
   }
+  .t22 {
+    margin-left: -300px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -726,6 +780,9 @@ footer div {
     font-size: 30px;
     margin-left: 150px;
     margin-top: 200px;
+  }
+  .t21 {
+    font-size: 60px;
   }
 }
 
@@ -777,6 +834,12 @@ footer div {
   }
   .t19 {
     margin-top: 200px;
+  }
+  .t21 {
+    font-size: 80px;
+  }
+  .t22 {
+    margin-left: -710px;
   }
 }
 /*# sourceMappingURL=style.css.map */
