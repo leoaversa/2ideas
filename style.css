@@ -71,7 +71,7 @@ h1 {
 nav {
   background-color: rgba(0, 0, 0, 0.9);
   padding: 12px 0 12px 0;
-  font-family: "SF Pro Text";
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 }
 
@@ -261,6 +261,40 @@ nav ul a {
   color: #ffddbe;
 }
 
+.t23 {
+  padding: 80px;
+  margin-top: -40px;
+  color: white;
+  font-size: 80px;
+  line-height: 1;
+  text-align: left;
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.t24 {
+  padding: 90px;
+  margin-top: -40px;
+  color: white;
+  font-size: 80px;
+  line-height: 1;
+  text-align: left;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.t25 {
+  padding: 90px;
+  margin-top: -40px;
+  color: #272626;
+  font-size: 80px;
+  line-height: 0.9;
+  text-align: left;
+  margin-left: 40px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
 .small_txt {
   font-size: 12px;
   text-align: center;
@@ -445,6 +479,11 @@ table td {
   transform-style: preserve-3d;
 }
 
+.opacity {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
 .flexitems {
   margin-top: 45px;
   display: -webkit-box;
@@ -464,6 +503,81 @@ table td {
   background-position: top center;
   padding-top: 120px;
   text-align: center;
+}
+
+.fotogrid {
+  display: -ms-grid;
+  display: grid;
+  margin: -320px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  grid-auto-rows: 1fr;
+  gap: 0px;
+  margin-top: 50px;
+  background-color: #020202;
+}
+
+.fotogrid div h2 {
+  font-size: 80px;
+  color: white;
+  font-weight: bold;
+  margin-top: 200px;
+}
+
+.fotogrid div p {
+  font-size: 20px;
+  color: #9c9b9b;
+  margin-right: 240px;
+  margin-top: 20px;
+}
+
+.fotogrid div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0px;
+}
+
+.fotogrid2 {
+  display: -ms-grid;
+  display: grid;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  grid-auto-rows: 1fr;
+  gap: 0px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.fotogrid2 div h2 {
+  font-size: 80px;
+  color: black;
+  font-weight: bold;
+  margin-top: 300px;
+  letter-spacing: 1px;
+}
+
+.fotogrid2 div p {
+  font-size: 20px;
+  color: black;
+  margin-right: 99px;
+  margin-left: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.fotogrid2 div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 0px;
 }
 
 /* ICONOS GRANDES */
@@ -492,6 +606,10 @@ table td {
 .c10 {
   padding: 20px;
   background-image: url(./assets/img/estamos.jpg);
+}
+
+.c11 {
+  background-image: url(./assets/img/back.jpg);
 }
 
 .contenedor {
@@ -539,9 +657,21 @@ table td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 17px;
-  text-align: center;
-  line-height: 2.0;
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.frase div p {
+  margin-top: -10px;
+  font-size: 14px;
+}
+
+.frase div h2 {
+  margin-top: -20px;
+  margin-bottom: -15px;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 footer {
@@ -605,6 +735,26 @@ footer div {
     -ms-grid-row: 1;
     grid-row: 1fr;
   }
+  .fotogrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-row: 1;
+    grid-row: 1fr;
+  }
+  .fotogrid div h2 {
+    font-size: 50px;
+    margin-left: 320px;
+  }
+  .fotogrid div p {
+    padding: 100px;
+    margin-left: 220px;
+  }
+  .fotogrid2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-row: 1;
+    grid-row: 1fr;
+  }
   .mainfoto {
     background-size: 600px;
     padding-top: 0px;
@@ -645,6 +795,24 @@ footer div {
   }
   .t17 {
     font-size: 20px;
+  }
+  .t23 {
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .t24 {
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  .t25 {
+    font-size: 40px;
+    padding: 0px 50px 0 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    letter-spacing: 0.9;
   }
   .iconarrow {
     margin-left: 190px;
@@ -715,6 +883,23 @@ footer div {
   .t22 {
     margin-left: -150px;
   }
+  .t23 {
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .t24 {
+    font-size: 60px;
+    padding: 30px;
+    margin-top: 10px;
+  }
+  .t25 {
+    font-size: 60px;
+    padding: 0px 50px 0 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 750px) {
@@ -732,6 +917,12 @@ footer div {
   }
   .t22 {
     margin-left: -170px;
+  }
+  .t23 {
+    font-size: 40px;
+    padding: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
   }
 }
 
@@ -752,6 +943,23 @@ footer div {
   }
   .t22 {
     margin-left: -200px;
+  }
+  .t23 {
+    font-size: 60px;
+    padding: 70px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .t24 {
+    font-size: 60px;
+    padding: 50px;
+    margin-top: -40px;
+  }
+  .t25 {
+    font-size: 60px;
+    padding: 0px 50px 0 50px;
+    margin-top: 20px;
+    margin-left: 10px;
   }
 }
 
@@ -775,6 +983,17 @@ footer div {
   .t22 {
     margin-left: -300px;
   }
+  .t23 {
+    font-size: 70px;
+    padding: 90px;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .t24 {
+    font-size: 90px;
+    padding: 90px;
+    margin-top: -40px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -791,6 +1010,12 @@ footer div {
   .t21 {
     font-size: 60px;
   }
+  .t23 {
+    font-size: 90px;
+    padding: 90px;
+    margin-top: 0px;
+    margin-left: 35px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -804,6 +1029,12 @@ footer div {
   .t19 {
     margin-left: 200px;
     margin-top: 200px;
+  }
+  .t25 {
+    font-size: 85px;
+    padding: 0px 200px 0px 200px;
+    margin-top: 40px;
+    margin-left: 10px;
   }
 }
 
@@ -819,6 +1050,12 @@ footer div {
     margin-left: 200px;
     margin-top: 200px;
   }
+  .t25 {
+    font-size: 85px;
+    padding: 0px 200px 0px 200px;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -828,6 +1065,12 @@ footer div {
   }
   .t19 {
     margin-top: 200px;
+  }
+  .t25 {
+    font-size: 85px;
+    padding: 0px 200px 0px 200px;
+    margin-top: 40px;
+    margin-left: 10px;
   }
 }
 
@@ -847,6 +1090,13 @@ footer div {
   }
   .t22 {
     margin-left: -710px;
+  }
+  .t25 {
+    font-size: 85px;
+    padding: 0px 200px 0px 200px;
+    margin-top: 40px;
+    margin-left: 10px;
+    letter-spacing: -2px;
   }
 }
 /*# sourceMappingURL=style.css.map */
