@@ -12,7 +12,6 @@
 h1 {
   padding-top: 50px;
   font-weight: bold;
-  font-family: "SF Pro Text";
   text-align: center;
   font-size: 67px;
   letter-spacing: -4px;
@@ -98,6 +97,15 @@ nav ul a {
 
 /* ESTILOS DE FUENTES */
 .t2 {
+  font-size: 26px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #353333;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.t2b {
   font-size: 26px;
   letter-spacing: -1px;
   text-align: center;
@@ -549,7 +557,7 @@ table td {
   margin-bottom: 50px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr 1fr;
+  grid-auto-rows: 1fr;
   gap: 0px;
   margin-top: 50px;
   background-color: white;
@@ -745,7 +753,7 @@ footer div {
         grid-template-columns: 1fr;
     -ms-grid-row: 1;
     grid-row: 1fr;
-    margin-left: -40px;
+    margin-left: 0px;
     width: 500px;
   }
   .fotogrid div h2 {
@@ -765,18 +773,38 @@ footer div {
     margin-bottom: -100px;
   }
   .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-row: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 0px;
+    margin-top: 50px;
+    margin-left: 50px;
   }
   .fotogrid2 div h2 {
-    font-size: 20px;
+    font-size: 50px;
+    margin-top: 0px;
   }
   .fotogrid2 div p {
-    font-size: 18px;
+    font-size: 17px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
   }
   .fotogrid2 div img {
-    width: 400px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin-top: -200px;
+    margin-left: -80px;
+  }
+  .fotogrid2 div span {
+    display: none;
   }
   .mainfoto {
     background-size: 600px;
@@ -797,6 +825,9 @@ footer div {
   }
   .t2 {
     font-size: 18px;
+  }
+  .t2b {
+    font-size: 17px;
   }
   .t4B {
     font-size: 18px;
@@ -879,6 +910,9 @@ footer div {
 }
 
 @media (min-width: 640px) {
+  .t2b {
+    font-size: 23.5px;
+  }
   .t16 {
     font-size: 60px;
   }
@@ -958,11 +992,11 @@ footer div {
     margin-top: 50px;
   }
   .fotogrid2 div h2 {
-    font-size: 50px;
-    margin-top: 200px;
+    font-size: 80px;
+    margin-top: 0px;
   }
   .fotogrid2 div p {
-    font-size: 20px;
+    font-size: 25px;
     margin-right: 99px;
     margin-left: 5px;
     margin-top: 20px;
@@ -972,6 +1006,8 @@ footer div {
     width: 100%;
     height: 100%;
     padding: 0px;
+    margin-top: -180px;
+    margin-left: -60px;
   }
   .fotogrid2 div span {
     display: none;
@@ -1000,17 +1036,36 @@ footer div {
     margin-top: 0px;
     margin-left: 15px;
   }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 140px;
+    margin-top: 50px;
+    background-color: white;
+  }
   .fotogrid2 div h2 {
-    font-size: 200px;
+    font-size: 80px;
+    margin-top: 20px;
   }
   .fotogrid2 div p {
-    font-size: 18px;
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
   }
   .fotogrid2 div img {
-    width: 500px;
-  }
-  .fotogrid2 div span {
-    display: none;
+    width: 480px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -1049,6 +1104,37 @@ footer div {
     margin-top: 20px;
     margin-left: 10px;
   }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 140px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 20px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 480px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 1070px) {
@@ -1085,6 +1171,37 @@ footer div {
     -o-object-fit: cover;
        object-fit: cover;
     padding: 0px;
+  }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 140px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 2px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 500px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
   }
   .contenedor2 {
     background-size: 1280px;
@@ -1172,6 +1289,38 @@ footer div {
        object-fit: cover;
     padding: 0px;
   }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 140px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 100px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1225,6 +1374,38 @@ footer div {
     -o-object-fit: cover;
        object-fit: cover;
     padding: 0px;
+  }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 200px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
   }
 }
 
@@ -1296,6 +1477,38 @@ footer div {
        object-fit: cover;
     padding: 0px;
   }
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 200px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 1850px) {
@@ -1356,40 +1569,44 @@ footer div {
        object-fit: cover;
     padding: 0px;
   }
-}
-
-.fotogrid2 {
-  display: -ms-grid;
-  display: grid;
-  margin: 0px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr 1fr;
-  gap: 0px;
-  margin-top: 50px;
-  background-color: white;
-}
-
-.fotogrid2 div h2 {
-  font-size: 80px;
-  margin-top: 200px;
-}
-
-.fotogrid2 div p {
-  font-size: 20px;
-  margin-right: 99px;
-  margin-left: 5px;
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.fotogrid2 div img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding: 0px;
+  .fotogrid2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 50px;
+    margin-top: 50px;
+    background-color: white;
+  }
+  .fotogrid2 div h2 {
+    font-size: 80px;
+    margin-top: 200px;
+  }
+  .fotogrid2 div p {
+    font-size: 20px;
+    margin-right: 99px;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .fotogrid2 div img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .fotogrid2 div span {
+    display: block;
+    margin-top: 280px;
+    margin-left: 60px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */
